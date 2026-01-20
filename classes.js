@@ -1,12 +1,10 @@
-// Class definition
-class Person{
-    constructor(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-}
+const user = {
+  id: 1,
+  name: "John",
+  age: 25,
+};
 
-const developer = new Person('Mario', 'Rossi');
-console.log(developer.firstName + " " + developer.lastName);
-
+function saveUser() {
+  localStorage.setItem("user", JSON.stringify(user));
+} 
  
